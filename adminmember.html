@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top bg-secondary">
+        <div class="container-fluid ">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                <span>ADMIN</span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Thungsaliam</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <br><br>
+        <h1>เลือกบุคลากร หรือนักเรียน</h1>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>บุคลากรหนือนักเรียน</option>
+            <option value="teacher">บุคลากร</option>
+            <option value="student">นักเรียน</option>
+        </select>
+        <br><br>
+        <h1>เลือกชั้นเรียน</h1>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>ชั้นเรียน</option>
+            <option value="#">มัธยมศึกษาปีที่1</option>
+            <option value="#">มัธยมศึกษาปีที่2</option>
+            <option value="#">รอใส่เพิ่มเติม</option>
+        </select>
+
+        <h3>เลือกห้องเรียน</h3>
+        <select class="form-select form-select mb-3" aria-label=".form-select example">
+            <option selected>ห้องเรียน</option>
+            <option value="#">ห้อง1</option>
+            <option value="#">ห้อง2</option>
+            <option value="#">รอใส่เพิ่มเติม</option>
+        </select>
+        <br>
+        <h3>สมาชิกในชั้นเรียน</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>รหัสนักเรียน</th>
+                    <th>ชื่อ - นามสกุล</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>00000001</td>
+                    <td>นาย ก a</td>
+                </tr>
+                <tr>
+                    <td>00000002</td>
+                    <td>นาย ข b</td>
+                </tr>
+                <tr>
+                    <td>00000003</td>
+                    <td>นาย ค c</td>
+                </tr>
+                <tr>
+                    <td>00000004</td>
+                    <td>นาย ง d</td>
+                </tr>
+                <tr>
+                    <td>00000005</td>
+                    <td>นาย จ e</td>
+                </tr>
+                <tr>
+                    <td>00000006</td>
+                    <td>นางสาว ฉ f</td>
+                </tr>
+                <tr>
+                    <td>00000007</td>
+                    <td>นางสาว ช g</td>
+                </tr>
+                <tr>
+                    <td>00000008</td>
+                    <td>นางสาว ซ h</td>
+                </tr>
+                <tr>
+                    <td>00000009</td>
+                    <td>นางสาว ฌ i</td>
+                </tr>
+                <tr>
+                    <td>00000010</td>
+                    <td>นางสาว ผ j</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</body>
+
+</html>

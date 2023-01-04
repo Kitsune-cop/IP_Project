@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<style>
+    table {
+        width: 100%;
+    }
+
+    table,
+    th,
+    td {
+        border: 2px solid black;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="bg-dark d-flex justify-content-between align-items-center">
+        <div class="logo text-light ms-5">LOGO</div>
+        <div class="rounded-circle bg-secondary me-5 my-2" style="width: 100px; height: 100px;"><h1></h1></div>
+    </div>
+    <nav>
+        <div class="d-flex justify-content-between align-items-center py-3" style="padding-left: 100px; padding-right:500px; background-color: #cbcbd1">
+                <a href="http://" class="text-decoration-none text-dark">หน้าแรก</a>    
+                <a href="http://" class="text-decoration-none text-dark">ข้อมูลส่วนตัว</a> 
+                <a href="http://" class="text-decoration-none text-dark">ตารางเรียน</a> 
+                <a href="http://" class="text-decoration-none text-dark">การบ้าน/สอบ</a>    
+                <a href="http://" class="text-decoration-none text-dark">สมาชิกในชั้นเรียน</a> 
+        </div>
+    </nav>
+    <div class="container">
+        <br>
+        <h1>studentTable</h1>
+        <caption>ครูที่ปรึกษา นายคีรี มี๊ก๊านบ๊าน</caption> 
+        <table>
+            <tr>
+              <th>วัน/เวลา</th>  
+              <th>08.30-9.30</th>
+              <th>09.30-10.30</th>
+              <th>10.30-11.30</th>
+              <th rowspan="6">พักกลางวัน</th>
+              <th>12.30-13.30</th>
+              <th>13.30-14.30</th>
+              <th>14.30-15.30</th>
+            </tr>
+            <tr>
+              <td rowspan="1">วันจันทร์</td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            
+            </tr>
+            <tr>
+              <td rowspan="1">วันอังคาร</td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              </tr>
+            <tr>
+                <td rowspan="1">วันพุธ</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td rowspan="1">วันพฤหัสบดี</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td rowspan="1">วันศุกร์</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            
+          </table>
+    </div>
+</body>
+</html>
